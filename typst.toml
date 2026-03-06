@@ -1,0 +1,15 @@
+[package]
+name = "mirea-report-template"
+version = "0.1.0"
+entrypoint = "src/export.typ"
+description = "Template for academic documents in compliance with GOST 7.32‑2017"
+keywords = ["gost", "7.32", "2017", "paper", "document", "russian", "mirea"]
+categories = ["report", "components", "scripting"]
+disciplines = ["education"]
+compiler = "0.14.0"
+exclude = [".github", "docs", "tests", "assets"]
+
+[template]
+path = "template"
+entrypoint = "main.typ"
+thumbnail = "assets/thumbnail.png"
