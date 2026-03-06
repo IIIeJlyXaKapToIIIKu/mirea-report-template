@@ -18,10 +18,17 @@ git clone https://github.com/IIIeJlyXaKapToIIIKu/mirea-report-template.git
 Для более удобной работы рекомендуется использовать VS Codium с плагином `Tinymist Typst`. Для предпросмотра результата в реальнои времени необходимо нажать `Ctrl + Shift + P` и прописать `Typst Preview: Preview Opened File`.
 
 Компиляция файла происходит следующей командой из директории, в которой установлен `Typst`:
-
+Если `Typst` находится вне репозитория:
 ```bash
-.\typst compile .\mirea-report-template\template\main.typ --root .\mirea-report-template
+typst compile mirea-report-template\template\main.typ --root mirea-report-template
 ```
+
+Если `Typst` находится в репозитории шаблона:
+```bash
+typst compile template\main.typ --root .
+```
+> **Примечание**
+> Команды выполнены в CMD
 
 При компиляции нужно будет указывать корневую папку (`--root`), чтобы шаблон нашёл свои модули.
 
