@@ -69,6 +69,8 @@
   show image: set align(center)
   show figure.where(kind: image): set figure(supplement: [Рисунок])
 
+  show figure.where(kind: raw): set block(breakable: true)
+
   show figure.where(kind: table): it => {
     set block(breakable: true)
     set figure.caption(position: top)
